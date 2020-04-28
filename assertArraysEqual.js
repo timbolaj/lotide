@@ -12,11 +12,8 @@ const eqArrays = function(arr1, arr2) {
   }
   //if none of the false cases were satisfied, then equality is maintained between arr1 and arr2
   return true;
-}
-/*Implement assertArraysEqual which will take in two arrays 
-and console.log an appropriate message to the console.
-Instead of doing a simple === check though, 
-this assertion function will make use of your eqArrays function for array comparison.
+};
+/*Implement assertArraysEqual which will take in two arrays and console.log an appropriate message to the console.Instead of doing a simple === check though, this assertion function will make use of your eqArrays function for array comparison.
 */
 const assertArraysEqual = function(arr1, arr2) {
   if (eqArrays(arr1, arr2)) {
@@ -24,7 +21,7 @@ const assertArraysEqual = function(arr1, arr2) {
   } else {
     console.log('The arrays are not equal');
   }
-}
+};
 //Test Cases
 //Equal arrays
 console.log(assertArraysEqual([1], [1]));

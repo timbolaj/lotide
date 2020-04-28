@@ -21,11 +21,11 @@ const eqArrays = function(arr1, arr2) {
   }
   //if none of the false cases were satisfied, then equality is maintained between arr1 and arr2
   return true;
-}
+};
 
 //Test cases:
 //Equality
-let a1 = [1,2]
+let a1 = [1,2];
 let a2 = a1;
 assertEqual(eqArrays(a1, a2), true);
 //Different lengths
