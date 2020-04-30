@@ -32,7 +32,7 @@ const assertArraysEqual = function(arr1, arr2) {
 
 const takeUntil = function(arr, func) {
   let collectedItems = [];
-  for (item of arr) {
+  for (let item of arr) {
     if (!func(item)) {
       collectedItems.push(item);
     } else {
@@ -40,7 +40,7 @@ const takeUntil = function(arr, func) {
     }
   }
   return collectedItems;
-}
+};
 
 const data1 = [1, 2, 5, 7, 2, -1, 2, 4, 5];
 const results1 = takeUntil(data1, x => x < 0);
@@ -54,5 +54,4 @@ assertArraysEqual(results2, [ 'I\'ve', 'been', 'to', 'Hollywood' ]);
 
 const data3 = [1,2,3,4,'hello',5,6];
 const results3 = takeUntil(data3, x => typeof(x) === 'string');
-console.log(results3);
-assertArraysEqual(results3, [1,2,3,4])
+assertArraysEqual(results3, [1,2,3,4]);
