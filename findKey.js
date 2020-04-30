@@ -19,8 +19,8 @@ it should return undefined.
 
 const findKey = function(obj, callback) {
   for (let key in obj) {
-    let callbackedKey = callback(obj[key]);
-    if (callbackedKey) {
+    const wantedKey = callback(obj[key]);
+    if (wantedKey) {
       return key;
     }
   }
