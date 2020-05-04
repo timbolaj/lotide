@@ -1,0 +1,27 @@
+{
+  "name": "@aaron.timbol/lotide",
+  "version": "1.0.0",
+  "description": "Copy of lodash, used for learning purposes at Lighthouse Labs",
+  "main": "assertArraysEqual.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timbolaj/lotide.git"
+  },
+  "keywords": [],
+  "author": "Aaron Timbol <timbolaj@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/timbolaj/lotide/issues"
+  },
+  "homepage": "https://github.com/timbolaj/lotide#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.1.2"
+  }
+}
