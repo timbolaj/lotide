@@ -69,3 +69,5 @@ assertArraysEqual(bigSpaced.b, bigSpacedObj.b);
 assertArraysEqual(bigSpaced.y, bigSpacedObj.y);
 assertArraysEqual(bigSpaced.e, bigSpacedObj.e);
 assertArraysEqual(bigSpaced.l, bigSpacedObj.l);
+
+module.exports = letterPositions;

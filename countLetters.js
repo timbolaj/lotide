@@ -32,3 +32,5 @@ assertEqual(helloCount.o, helloObject.o);
 let emptyStringCount = countLetters(' ');
 let emptyObject = {' ': 1};
 assertEqual(emptyObject[' '], emptyStringCount[' ']);
+
+module.exports = countLetters;

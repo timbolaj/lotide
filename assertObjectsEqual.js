@@ -63,3 +63,5 @@ assertObjectsEqual(random1, random1NoA);//should fail
 assertObjectsEqual(random1, random1Copy);
 assertObjectsEqual(arr, arrNoB);//should fail
 assertObjectsEqual(arr, arrCopy);
+
+module.exports = assertObjectsEqual;

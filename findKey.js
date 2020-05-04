@@ -54,3 +54,5 @@ let example3 = findKey({
   'bbbbb' : {vowelCount: 0}
 }, x => x.vowelCount === 10);
 assertEqual(example3, undefined);
+
+module.exports = findKey;

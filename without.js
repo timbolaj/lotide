@@ -50,3 +50,4 @@ source = ['hello', 2];
 dontWant = ['hello'];
 expected = [2];
 console.log(assertArraysEqual(expected,without(source,dontWant)));
+module.exports = without;

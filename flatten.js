@@ -45,3 +45,5 @@ const flatten = function(arr) {
 let a = [1,2,3,[1,2,3],[1]];
 let b = [1,2,3,1,2,3,1];
 console.log(assertArraysEqual(flatten(a), b));
+
+module.exports = flatten;

@@ -55,3 +55,4 @@ const stringed = map(random, element => element.toString());
 const correctlyStringed = random.map(element => element.toString());
 assertArraysEqual(stringed, correctlyStringed);
 
+module.exports = map

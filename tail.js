@@ -6,4 +6,6 @@ const tail = function(arr) {
   return tailArray;
 };
 
+console.log(tail([1]));
+
 module.exports = tail;

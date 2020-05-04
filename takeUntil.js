@@ -55,3 +55,5 @@ assertArraysEqual(results2, [ 'I\'ve', 'been', 'to', 'Hollywood' ]);
 const data3 = [1,2,3,4,'hello',5,6];
 const results3 = takeUntil(data3, x => typeof(x) === 'string');
 assertArraysEqual(results3, [1,2,3,4]);
+
+module.exports = takeUntil;
