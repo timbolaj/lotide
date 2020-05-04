@@ -3,20 +3,14 @@
 // identical values.
 // Otherwise you get back a big fat false!
 
-const eqArrays = function(arr1, arr2) {
-  //make sure length is the same
-  if (arr1.length === arr2.length) {
-    //for loop to make sure each element matches in the right spot
-    for (let i = 0; i < arr1.length; i ++) {
-      if (arr1[i] !== arr2[i]) {
-        return false;
-      }
-    }
-  } else {
-    return false;
-  }
-  //if none of the false cases were satisfied, then equality is maintained between arr1 and arr2
-  return true;
+const comparePrimitiveValues = function(value1, value2) {
+  return value1 === value2;
+};
+
+const compareLengthOfObjects = function(object1, object2) {
+  let lengthOfFirstObject = Object.keys(object1).length;
+  let lengthOfSecondObject = Object.keys(object2).length;
+  return lengthOfFirstObject === lengthOfSecondObject;
 };
 
 const eqObjects = function(object1, object2) {
@@ -36,16 +30,6 @@ const eqObjects = function(object1, object2) {
     return false;
   }
   return true;
-};
-
-const comparePrimitiveValues = function(value1, value2) {
-  return value1 === value2;
-};
-
-const compareLengthOfObjects = function(object1, object2) {
-  let lengthOfFirstObject = Object.keys(object1).length;
-  let lengthOfSecondObject = Object.keys(object2).length;
-  return lengthOfFirstObject === lengthOfSecondObject;
 };
 
 module.exports = eqObjects
