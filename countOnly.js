@@ -48,9 +48,4 @@ const assertEqual = function(actual, expected) {
   }
 };
 
-//TEST CODE
-console.log(assertEqual(result1["Jason"], 1));
-console.log(assertEqual(result1["Karima"], undefined));
-console.log(assertEqual(result1["Fang"], 2));
-
 module.exports = countOnly

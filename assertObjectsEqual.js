@@ -52,16 +52,4 @@ const assertObjectsEqual = function(actual, expected) {
   }
 }
 
-let random1 = {a: 1, b: 2, c: 3};
-let random1NoA = {b: 2, c: 3};
-let random1Copy = {a: 1, b: 2, c: 3};
-let arr = {a: [1,2,3], b: 2};
-let arrNoB = {a: [1,2,3]};
-let arrCopy = {a: [1,2,3], b: 2}
-
-assertObjectsEqual(random1, random1NoA);//should fail
-assertObjectsEqual(random1, random1Copy);
-assertObjectsEqual(arr, arrNoB);//should fail
-assertObjectsEqual(arr, arrCopy);
-
 module.exports = assertObjectsEqual;
