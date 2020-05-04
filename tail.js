@@ -1,10 +1,4 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✔️✔️✔️ Assertion Passed: ${actual} + === ${expected}`);
-  } else {
-    console.log(`⛔⛔⛔ Assertion Failed: ${actual} + !== ${expected}`);
-  }
-};
+//Return the 'tail' of an array - ie, everything but the first element
 
 const tail = function(arr) {
   let tailArray = arr;
@@ -12,14 +6,4 @@ const tail = function(arr) {
   return tailArray;
 };
 
-const result = tail(['hello', 'lighthouse', 'labs']);
-assertEqual(result.length, 2);
-assertEqual(result[0], 'lighthouse');
-assertEqual(result[1], 'labs');
-
-const oneThing = tail([0]);
-assertEqual(oneThing.length, 0);
-assertEqual(oneThing[0], undefined);
-
-const nothing = tail([]);
-assertEqual(nothing[0], undefined);
+module.exports = tail;
